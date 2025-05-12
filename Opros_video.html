@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Техническое задание: Видеонаблюдение</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      background: #1a73e8;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .section {
+      background-color: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      border-radius: 8px;
+    }
+    h2 {
+      color: #1a73e8;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 5px;
+    }
+    label {
+      display: block;
+      margin: 10px 0;
+      font-weight: 500;
+    }
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 5px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+    }
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    button {
+      display: block;
+      margin: 30px auto;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #1669c1;
+    }
+    @media (max-width: 600px) {
+      body { padding: 10px; }
+      .section { padding: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Техническое задание: Видеонаблюдение</h1>
+
+  <div class="section">
+    <h2>1. Общая информация</h2>
+    <label>Тип объекта: <input type="text" /></label>
+    <label>Адрес объекта: <input type="text" /></label>
+    <label>Площадь (м²): <input type="number" /></label>
+    <label>Количество этажей: <input type="number" /></label>
+    <label>Наличие охраны/контроля доступа: <input type="text" /></label>
+  </div>
+
+  <div class="section">
+    <h2>2. Цели установки видеонаблюдения</h2>
+    <label><input type="checkbox" /> Защита от проникновения</label>
+    <label><input type="checkbox" /> Контроль сотрудников</label>
+    <label><input type="checkbox" /> Контроль за домом (дети, няни)</label>
+    <label><input type="checkbox" /> Доступ онлайн</label>
+    <label><input type="checkbox" /> Хранение архива</label>
+    <label>Другие цели: <input type="text" /></label>
+  </div>
+
+  <div class="section">
+    <h2>3. Камеры</h2>
+    <label>Количество камер: <input type="number" /></label>
+    <label>Места установки (внутри/снаружи): <input type="text" /></label>
+    <label>Уличные условия (температура, влажность): <input type="text" /></label>
+    <label>Необходимость ИК-подсветки: <input type="text" /></label>
+    <label>Угол обзора, фокусное расстояние: <input type="text" /></label>
+    <label>Поворотные или стационарные: <input type="text" /></label>
+  </div>
+
+  <div class="section">
+    <h2>4. Запись и архив</h2>
+    <label>Нужно ли постоянное хранение? <input type="text" /></label>
+    <label>Сколько дней хранения? <input type="number" /></label>
+    <label>Локально или в облаке? <input type="text" /></label>
+    <label>Разрешение записи (FullHD, 4K и т.д.): <input type="text" /></label>
+  </div>
+
+  <div class="section">
+    <h2>5. Доступ к системе</h2>
+    <label>Удалённый доступ (с телефона, ПК): <input type="text" /></label>
+    <label>Уведомления о движении: <input type="text" /></label>
+    <label>Роли пользователей (админ/гость): <input type="text" /></label>
+  </div>
+
+  <div class="section">
+    <h2>6. Мониторинг</h2>
+    <label>Есть ли экраны на объекте? <input type="text" /></label>
+    <label>Нужно ли выводить видео на ТВ/монитор? <input type="text" /></label>
+    <label>Требуется ли централизованный пункт? <input type="text" /></label>
+  </div>
+
+  <div class="section">
+    <h2>7. Электропитание и сеть</h2>
+    <label>Наличие PoE: <input type="text" /></label>
+    <label>Проводной/беспроводной доступ: <input type="text" /></label>
+    <label>Источники резервного питания (UPS): <input type="text" /></label>
+  </div>
+
+  <div class="section">
+    <h2>8. Интеграции</h2>
+    <label>Интеграция с домофоном, СКУД, "Умным домом": <input type="text" /></label>
+    <label>Голосовые помощники, другие системы: <input type="text" /></label>
+  </div>
+
+  <div class="section">
+    <h2>9. Предпочтения</h2>
+    <label>Предпочитаемые бренды (Dahua, Hikvision, Uniview, др.): <input type="text" /></label>
+    <label>Бюджет: <input type="text" /></label>
+    <label>Сроки реализации: <input type="text" /></label>
+  </div>
+
+  <button onclick="window.print()">Сохранить как PDF</button>
+</body>
+</html>
