@@ -2,21 +2,80 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ТЗ: Умный дом</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    h1, h2 { background-color: #f2f2f2; padding: 10px; }
-    label { display: block; margin: 5px 0; }
-    input[type="text"], input[type="number"], textarea {
-      width: 100%; padding: 5px; margin: 5px 0;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+      color: #333;
     }
-    .section { margin-bottom: 30px; }
-    button { padding: 10px 20px; font-size: 16px; }
+    h1 {
+      text-align: center;
+      background: #1a73e8;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .section {
+      background-color: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      border-radius: 8px;
+    }
+    h2 {
+      color: #1a73e8;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 5px;
+    }
+    label {
+      display: block;
+      margin: 10px 0;
+      font-weight: 500;
+    }
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 5px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+    }
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    button {
+      display: block;
+      margin: 30px auto;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #1669c1;
+    }
+    @media (max-width: 600px) {
+      body { padding: 10px; }
+      .section { padding: 15px; }
+    }
   </style>
 </head>
 <body>
-<div id="form-content">
   <h1>Техническое задание: Умный дом</h1>
 
   <!-- 1. Общая информация -->
