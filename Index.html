@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ТЗ: Умный дом</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1, h2 { background-color: #f2f2f2; padding: 10px; }
+    label { display: block; margin: 5px 0; }
+    input[type="text"], input[type="number"], textarea {
+      width: 100%; padding: 5px; margin: 5px 0;
+    }
+    .section { margin-bottom: 30px; }
+    button { padding: 10px 20px; font-size: 16px; }
+  </style>
+</head>
+<body>
+<div id="form-content">
+  <h1>Техническое задание: Умный дом</h1>
+
+  <!-- 1. Общая информация -->
+  <div class="section">
+    <h2>1. Общая информация</h2>
+    <label>Тип объекта: <input type="text"></label>
+    <label>Адрес объекта: <input type="text"></label>
+    <label>Площадь (м²): <input type="number"></label>
+    <label>Количество этажей: <input type="number"></label>
+    <label>Количество помещений: <input type="number"></label>
+    <label>Стадия объекта: <input type="text"></label>
+    <label>Ориентировочный бюджет: <input type="text"></label>
+    <label>Сроки реализации: <input type="text"></label>
+  </div>
+
+  <!-- 2. Цели и задачи -->
+  <div class="section">
+    <h2>2. Цели и задачи</h2>
+    <label><input type="checkbox"> Комфорт</label>
+    <label><input type="checkbox"> Энергоэффективность</label>
+    <label><input type="checkbox"> Безопасность</label>
+    <label><input type="checkbox"> Дистанционное управление</label>
+    <label><input type="checkbox"> Интеграция с голосовыми ассистентами</label>
+    <label>Другие задачи: <textarea rows="3"></textarea></label>
+    <label>Приоритетные функции: <textarea rows="3"></textarea></label>
+  </div>
+
+  <!-- 3. Сценарии -->
+  <div class="section">
+    <h2>3. Сценарии использования</h2>
+    <label>Опишите желаемые сценарии (Утро, Ночь, Кино и т.п.):</label>
+    <textarea rows="4"></textarea>
+  </div>
+
+  <!-- 4. Освещение -->
+  <div class="section">
+    <h2>4. Освещение</h2>
+    <label><input type="checkbox"> Основное освещение</label>
+    <label><input type="checkbox"> Подсветка</label>
+    <label><input type="checkbox"> Уличное освещение</label>
+    <label><input type="checkbox"> RGB / RGBW</label>
+    <label><input type="checkbox"> Диммируемое освещение</label>
+    <label><input type="checkbox"> Управление по расписанию/датчику</label>
+  </div>
+
+  <!-- 5. Климат -->
+  <div class="section">
+    <h2>5. Климат-контроль</h2>
+    <label><input type="checkbox"> Тёплый пол</label>
+    <label><input type="checkbox"> Радиаторы</label>
+    <label><input type="checkbox"> Кондиционеры</label>
+    <label><input type="checkbox"> Вентиляция</label>
+    <label><input type="checkbox"> Рекуперация</label>
+    <label><input type="checkbox"> Увлажнение / осушение</label>
+    <label>Желаемые функции: <textarea rows="3"></textarea></label>
+  </div>
+
+  <!-- 6. Безопасность -->
+  <div class="section">
+    <h2>6. Безопасность</h2>
+    <label><input type="checkbox"> Охранная сигнализация</label>
+    <label><input type="checkbox"> Датчики движения</label>
+    <label><input type="checkbox"> Датчики открытия</label>
+    <label><input type="checkbox"> Видеонаблюдение</label>
+    <label>Количество камер / зоны установки: <input type="text"></label>
+    <label><input type="checkbox"> Датчики дыма / газа / протечки</label>
+    <label><input type="checkbox"> Уведомления на телефон</label>
+  </div>
+
+  <!-- 7. Мультимедиа -->
+  <div class="section">
+    <h2>7. Мультимедиа</h2>
+    <label><input type="checkbox"> Управление ТВ</label>
+    <label><input type="checkbox"> Домашний кинотеатр</label>
+    <label><input type="checkbox"> Мультирум-аудио</label>
+    <label>Зоны для мультирум-аудио: <input type="text"></label>
+    <label><input type="checkbox"> Голосовое управление</label>
+  </div>
+
+  <!-- 8. Шторы и жалюзи -->
+  <div class="section">
+    <h2>8. Шторы и жалюзи</h2>
+    <label><input type="checkbox"> Электроприводы есть</label>
+    <label><input type="checkbox"> Управление по времени</label>
+    <label><input type="checkbox"> Управление по свету</label>
+    <label><input type="checkbox"> Управление по сценарию</label>
+  </div>
+
+  <!-- 9. Сеть и оборудование -->
+  <div class="section">
+    <h2>9. Сеть и оборудование</h2>
+    <label><input type="checkbox"> Проводная сеть (Ethernet)</label>
+    <label>Количество Wi-Fi точек: <input type="number"></label>
+    <label>Место размещения центрального оборудования: <input type="text"></label>
+    <label>Предпочтительные протоколы:</label>
+    <label><input type="checkbox"> KNX</label>
+    <label><input type="checkbox"> Zigbee</label>
+    <label><input type="checkbox"> Z-Wave</label>
+    <label><input type="checkbox"> Wi-Fi</label>
+  </div>
+
+  <!-- 10. Интерфейсы управления -->
+  <div class="section">
+    <h2>10. Интерфейсы управления</h2>
+    <label><input type="checkbox"> Мобильное приложение</label>
+    <label><input type="checkbox"> Голосовой ассистент</label>
+    <label><input type="checkbox"> Сенсорные панели</label>
+    <label><input type="checkbox"> Настенные выключатели</label>
+    <label><input type="checkbox"> Удалённый доступ (через интернет)</label>
+    <label>Предпочтительный способ управления: <input type="text"></label>
+  </div>
+
+  <!-- 11. Дополнительно -->
+  <div class="section">
+    <h2>11. Дополнительно</h2>
+    <label>Уже приобретённое оборудование: <textarea rows="3"></textarea></label>
+    <label>Предпочитаемые бренды: <textarea rows="2"></textarea></label>
+    <label>Ограничения по дизайну, электрике и пр.: <textarea rows="3"></textarea></label>
+  </div>
+
+<button onclick="window.print()">Сохранить как PDF</button>
+</div>
+
+<!-- Подключение библиотеки для PDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+  function generatePDF() {
+    const element = document.getElementById('form-content');
+    html2pdf().from(element).save('Техническое_задание_Умный_дом.pdf');
+  }
+</script>
+</body>
+</html>
